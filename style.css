@@ -7,6 +7,8 @@
   display: flex;
 }
 
+/* Side bar styles */
+
 .sidebar {
   height: 100vh;
   width: 18vw;
@@ -22,7 +24,6 @@
 .top-left > li > button {
   display: grid;
   grid-template-columns: 0.2fr 1fr;
-
   width: 100%;
   margin-top: 5px;
   text-align: left;
@@ -34,7 +35,6 @@
 
 .bottom-left > li > button {
   display: grid;
-
   grid-template-columns: 0.2fr 1fr;
   width: 100%;
   margin-top: 5px;
@@ -45,25 +45,16 @@
   cursor: pointer;
 }
 
-.top-bar {
-  width: 80vw;
-  height: 15vh;
-}
-
-.content {
-}
-
 li {
   list-style-type: none;
   padding-left: 15px;
 }
-
 li > button:hover {
   background-color: rgb(110, 182, 245);
 }
 
 .top-left > h1 {
-    font-weight: 800;
+  font-weight: 800;
   font-size: 2.7em;
   margin-left: 15px;
   margin-top: 15px;
@@ -73,9 +64,107 @@ li > button:hover {
 }
 
 a {
-    font-weight: 300;
+  font-weight: 300;
   color: black;
   margin-top: 8px;
   text-align: left;
   text-decoration: none;
+}
+
+/* top bar styles */
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 82vw;
+  height: 15vh;
+  padding-left: 15px;
+  background-color: rgb(104, 125, 248);
+}
+
+.search-bar {
+  display: flex;
+  padding-top: 15px;
+}
+
+#search {
+  height: 25px;
+  width: 400px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(202, 202, 202);
+}
+
+.top-bar-right {
+  display: grid;
+  margin-top: 15px;
+  margin-left: 150px;
+  width: 550px;
+}
+
+.top-bar-left {
+  display: grid;
+}
+
+.icon-name > img {
+  height: 25px;
+}
+
+.search-bar > img {
+  height: 30px;
+}
+
+.top-bar-left > img {
+  height: 30px;
+}
+
+.name {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.name > p {
+  margin-left: 15px;
+}
+
+.name > img {
+  height: 50px;
+}
+
+p > span {
+  font-size: 1.8em;
+}
+
+.button-span {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button-span > button {
+  border-radius: 15px;
+  border: none;
+  margin: 5px;
+  height: 45px;
+  background-color: rgb(108, 108, 243);
+}
+
+.button-span > button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.icon-name {
+  display: grid;
+  grid-template-columns: 2fr 0.1fr 1fr;
+  gap: 15px;
+}
+
+.icon-name > p {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+/* main content styles */
+
+.content {
 }
