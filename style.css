@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .container {
@@ -79,7 +80,8 @@ a {
   width: 82vw;
   height: 15vh;
   padding-left: 15px;
-  background-color: rgb(104, 125, 248);
+  background-color: rgb(46, 151, 243);
+  box-shadow:  10px 10px 15px rgb(175, 175, 174);
 }
 
 .search-bar {
@@ -100,6 +102,7 @@ a {
   margin-top: 15px;
   margin-left: 150px;
   width: 550px;
+  
 }
 
 .top-bar-left {
@@ -167,7 +170,7 @@ p > span {
 /* main content styles */
 
 .content {
-  background-color: rgb(179, 179, 179);
+  background-color: rgb(236, 236, 236);
 }
 
 .main-container {
@@ -203,6 +206,7 @@ p > span {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  width: 10vw;
 }
 
 .item {
@@ -232,5 +236,18 @@ p > span {
 
 .grid-container2 >.item11 {
   height: 36vh;
+}
+
+.item > * {
+  margin: 5px;
+  
+}
+
+.grid-container1 > .item {
+  box-shadow: 10px 10px 15px rgb(175, 175, 174);
+}
+
+.grid-container2 > .item {
+  box-shadow: 10px 10px 15px rgb(175, 175, 174);
 }
 
